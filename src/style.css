@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
 html, body {
     height: 100%;
     width: 100%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Playfair Display', serif;
     color: #222;
 }
 .logo {
@@ -12,9 +12,23 @@ html, body {
     left: 8%;
     height: 50px;
 }
+.card {
+    margin-bottom: 30px;
+}
 .profile {
-    margin-left: 40%;
     width: 260px;
+    height: auto;
+    margin-left: 120px;
+    border-radius: 40%;
+}
+.t {
+    font-size: 2.3rem;
+}
+.my-text {
+    font-size: 1.5rem;
+}
+.aboutme {
+    padding-top: 60px;
 }
 .secondary-color {
     color: #5ed1e6;
@@ -27,20 +41,26 @@ html, body {
     padding-right: 50px;
 }
 .nav-link {
-    font-size: 1.1rem !important;
+    font-size: 1.4rem;
 }
 canvas {
+    position: absolute;
     z-index: -1;
 }
 
-.top-content {
-    position: absolute;
-    top: 30px;
-    padding: 210px 100px;
+.card-img-top {
+    height: 240px;
 }
-.top-content .text h1 {
+.top-content {
+    padding: 210px 100px;
+    margin-top: 8%;
+    margin-bottom: 10%;
+    
+}
+.centir {
     margin-top: 25px;
-    text-align: center;
+
+
 }
 .top-content .description {
     margin: 30px 0 10px 0;
@@ -54,16 +74,14 @@ canvas {
 .bg-color {
     background-color: rgb(244, 247, 248)
 }
-.card img {
-    width: 100%;
-    height: 40%;
-}
-
 .padding {
     padding-bottom: 2rem;
     padding-left: 5rem;
     padding-right: 5rem;
     
+}
+.project-text {
+    margin-left: 40%;
 }
 .display-6 {
     text-transform: uppercase;
@@ -73,7 +91,7 @@ canvas {
 .welcome {
     width: 75%;
     margin: 0 auto;
-    padding-top: 2rem;
+    padding-top: 6rem;
 }
 .welcome hr {
     border-top: 2px sodid #b4b4b4;
@@ -83,7 +101,7 @@ canvas {
     margin-bottom: 1rem;
 }
 .align-center {
-    padding-left: 50%;
+    padding-left: 45%;
     margin-bottom: 3%;
 }
 .line {
@@ -91,19 +109,20 @@ canvas {
     margin-top: .3rem;
 }
 .fa-code {
-    color: #e54d2e;
+    color: #2ee59f;
 }
 .fa-linkedin, .fa-github-square, .fa-google {
     color: #536173;
 }
 
 .fa-code, .fa-lightbulb {
-    font-size: 4em;
+    font-size: 3em;
     margin: 1rem;
 }
 .social a {
-    font-size: 4.5em;
+    font-size: 4em;
     padding-left: 1rem;
+    padding-right: 1rem;
 
 }
 .social a i {
@@ -143,9 +162,20 @@ footer {
     }
     .profile {
         width: 200px;
-        margin-left:  35%; 
-        margin-bottom:  10%;  
+        margin-left: 0px;
+        margin-bottom: 10%;  
     }
+    .width {
+        margin-bottom: 0px;
+    }
+    .aboutme {
+        padding-top: 0px;
+    }
+    .card-img-top {
+        height: 180px;
+    }
+    
+    
 }
 @media (max-width: 576px) {
     .logo {
@@ -162,11 +192,40 @@ footer {
         padding-top: 3.3rem;
     }
     .padding-text {
-        padding-left: 30%
+        padding-left: 30%;
+        padding-top: 30px;
+
     }
     .profile {
         width: 180px;
-        margin-left:  15%; 
+        margin-left:  8%; 
         margin-bottom:  20%;  
     }
+    .project-text {
+        margin-left: 35%;
+    }
+    .width {
+        font-size: 14px;
+        margin-bottom: 0px;
+        padding-bottom: 120px;
+        padding-right: 0px;
+        width: 320px;
+        padding-left: 0px;
+        padding-top: 180px;
+        margin-top: 80px;
+    }
+    .t {
+        padding-left: 15px;
+
+    }
+    .t h1 {
+        font-size: 24px;
+    }
+    .welcome {
+        padding-top: 3rem;
+    }
+    /* .card-img-top {
+        height: 240px;
+    } */
+    
 }
