@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
-
+html { overflow-x: hidden }
+* {
+    font-family: 'Montserrat', sans-serif;
+}
 html, body {
     height: 100%;
     width: 100%;
-    font-family: 'Playfair Display', serif;
     color: #222;
+    font-size: 1.1rem;
 }
 .logo {
     position: absolute;
@@ -12,26 +14,41 @@ html, body {
     left: 8%;
     height: 50px;
 }
-.card {
-    margin-bottom: 30px;
-}
 .profile {
-    width: 260px;
+    width: 80%;
     height: auto;
-    margin-left: 120px;
-    border-radius: 40%;
+    -webkit-filter: grayscale(100%);filter: grayscale(100%);
 }
-.t {
-    font-size: 2.3rem;
+.tittle {
+    font-family: 'Cinzel', serif;
 }
-.my-text {
-    font-size: 1.5rem;
+.about {
+    margin-top: 20%;
+    margin-bottom: 15%;
 }
-.aboutme {
-    padding-top: 60px;
+.links a {
+    font-size: 2em;
+    padding-right: 2rem;
+    color: black;
+}
+.links { 
+    margin-top: 10%;
+}
+.knowledge-icons i {
+    font-size: 3em;
+}
+.line {
+    width: 20%;
+}
+.line1 {
+    width: 13%;
+}
+.project-img {
+    width: 80%;
+    height: auto;
 }
 .secondary-color {
-    color: #5ed1e6;
+    color: #F73022;
 }
 .navbar {
     padding: .8rem;
@@ -47,140 +64,85 @@ canvas {
     position: absolute;
     z-index: -1;
 }
-
-.card-img-top {
-    height: 240px;
-}
-.top-content {
-    padding: 210px 100px;
+.mt {
     margin-top: 8%;
-    margin-bottom: 10%;
-    
 }
-.centir {
-    margin-top: 25px;
-
-
-}
-.top-content .description {
-    margin: 30px 0 10px 0;
-}
-.top-content .description p {
-    opacity: 0.8;
-}
-.top-content .top-big-link {
-    margin-top: 45px;
+.mb {
+    margin-bottom: 8%;
 }
 .bg-color {
     background-color: rgb(244, 247, 248)
 }
-.padding {
-    padding-bottom: 2rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
-    
+.social {
+    margin-left: 38%;
 }
-.project-text {
-    margin-left: 40%;
-}
-.display-6 {
-    text-transform: uppercase;
-    align-content: center;
-    padding-left: 40%;
-}
-.welcome {
-    width: 75%;
-    margin: 0 auto;
-    padding-top: 6rem;
-}
-.welcome hr {
-    border-top: 2px sodid #b4b4b4;
-    width: 20%;
-    margin-left: 60%;
-    margin-top: .3rem;
-    margin-bottom: 1rem;
-}
-.align-center {
-    padding-left: 45%;
-    margin-bottom: 3%;
-}
-.line {
-    width: 15%;
-    margin-top: .3rem;
-}
-.fa-code {
-    color: #2ee59f;
-}
-.fa-linkedin, .fa-github-square, .fa-google {
-    color: #536173;
-}
-
-.fa-code, .fa-lightbulb {
+ .social a {
     font-size: 3em;
-    margin: 1rem;
-}
-.social a {
-    font-size: 4em;
-    padding-left: 1rem;
-    padding-right: 1rem;
-
+    /* padding-left: 1rem;
+    padding-right: 1rem; */
 }
 .social a i {
     padding-top: 40px;
+    padding-left: 5%;
+    color: #536173;
 }
-
-
 footer {
-    color: #d5d5d5;
+    color: white;
     padding-top: 1rem;
-    height: 180px;
-    background: #70e1f5;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ffd194, #70e1f5);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ffd194, #70e1f5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 40%;
+    background: #D66D75;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E29587, #D66D75);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E29587, #D66D75); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */        
+}
+.foot {
+    background: #536173;
+    color: white;
+    height: 60px;
+    text-align: center;
 }
 
-@media (max-width: 992px) {
-    .social a{
-        font-size: 4em;
-        padding: 2rem;
+@media (min-width: 800px) and (max-width: 1024px) {
+    .latest {
+        font-size: 2.2rem;
+    }
+    .talk {
+        font-size: 1.4rem;
+    }
+    .social {
+        font-size: 1.6em;
+        margin-top: 10%;
+        margin-left: 27%;
     }
     
 }
 @media (max-width: 768px) {
-    .social a{
+    .social {
+        margin-left: 25%;
+    }
+    .social a {
         font-size: 3.2em;
-        padding: 1.2rem;
     }
     .social a i {
         padding-left: 1.8rem;
     }
-    .display-6 {
-        font-size: 1.8rem;
-    }
-    .align-center {
-        padding-left: 30%;
-    }
     .profile {
-        width: 200px;
-        margin-left: 0px;
-        margin-bottom: 10%;  
+        width: 40%;
+        margin-left: 32%;
+        /* margin-bottom: 10%;   */
     }
-    .width {
-        margin-bottom: 0px;
-    }
-    .aboutme {
-        padding-top: 0px;
-    }
-    .card-img-top {
-        height: 180px;
-    }
-    
+    .about1 {
+        margin-top: 0;
+        margin-left: 6%;
+        padding-right: 0;
+        margin-right: 0;
+    }  
     
 }
+
+
 @media (max-width: 576px) {
     .logo {
-        top:1%;
-        left: 3%;
+        margin-top: 3%;
         width: 60px;
         height: 40px;
     }
@@ -188,44 +150,48 @@ footer {
         font-size: 3em;
         padding: .8rem;
     }
-    .social a i {
-        padding-top: 3.3rem;
-    }
-    .padding-text {
-        padding-left: 30%;
-        padding-top: 30px;
-
-    }
     .profile {
-        width: 180px;
-        margin-left:  8%; 
-        margin-bottom:  20%;  
+        width: 70%;
+        margin-left: 15%; 
+        margin-top: 30%;  
     }
-    .project-text {
-        margin-left: 35%;
+    .mb {
+        margin-top: 25%;
+        margin-bottom: 25%;
     }
-    .width {
-        font-size: 14px;
-        margin-bottom: 0px;
-        padding-bottom: 120px;
-        padding-right: 0px;
-        width: 320px;
-        padding-left: 0px;
-        padding-top: 180px;
-        margin-top: 80px;
+    .about {
+        margin-top: 0;
     }
-    .t {
-        padding-left: 15px;
-
+    .about1 {
+        margin-left: 10%;
     }
-    .t h1 {
-        font-size: 24px;
+    .latest {
+        font-size: 1.6rem;
     }
-    .welcome {
-        padding-top: 3rem;
+    footer {
+      height: 60%;  
     }
-    /* .card-img-top {
-        height: 240px;
-    } */
-    
+    .social {
+        margin-left: 10%;
+        margin-top: 10%;
+    }
+    .social a {
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 2.5em;
+    }
+}
+@media (max-width: 325px) {
+    .social {
+        margin-left: 1%;
+    } 
+    .social a {
+        font-size: 2em;
+    }
+    .social a i {
+        padding-top: 2%;
+    }
+    .links a {
+        padding-right: 1rem;
+    }
 }

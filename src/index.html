@@ -1,217 +1,183 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"    crossorigin="anonymous">
-    <title>Portafolio | Cinthya Segura</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Portafolio | Cinthya Segura</title>
+  <style>
+      @import url('https://fonts.googleapis.com/css?family=Montserrat|Cinzel');
+  </style>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-md navbar-light fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand"  href="#/home">
-                    <img class="logo" src="https://github.com/cinthyasegura/lim008-fe-silicon-valley/blob/master/src/images/CS.png?raw=true" alt="logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link scroll-link" href="#about">Acerca de mí</a></li>
-                        <li class="nav-item"><a class="nav-link scroll-link" href="#project">Proyectos</a></li>
-                        <li class="nav-item"><a class="nav-link scroll-link" href="#contact">Contáctame</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-     </header>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand"  href="#/home">
+          <img class="logo" src="./public/image/CS.png" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link scroll-link" href="#knowledge">Conocimientos</a></li>
+            <li class="nav-item"><a class="nav-link scroll-link" href="#project">Proyectos</a></li>
+            <li class="nav-item"><a class="nav-link scroll-link" href="#contact">Contáctame</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
    
-     <canvas id="canvas"></canvas>
-    <div class="top-content width text-center">
-        <div class="c">
-            <div class="r ">
-                <div class="t">
-                    <h1 class="animated textbounceInLeft  text-center">Hola, soy <span class="secondary-color">Cinthya.</span></h1>
-                    <div id="about">
-                        <p class=" text-center my-text">
-                            Front-end Developer.
-                        </p>
-                    </div>
-                </div>
-            </div>
-     
-        </div>            
+  <canvas id="canvas"></canvas>
+
+  
+  <section class="container">  
+  <div class="row">
+      <figure class="col-lg-6 col-sm-12 about">
+        <img src="./public/image/cinthya.jpg" class="img-fluid profile" alt="foto de perfil">
+      </figure>
+      <div class="col-lg-6 col-sm-12 about about1">
+      <h1 class="tittle">Hola, soy <span class="tittle secondary-color">Cinthya.</span></h1>
+        <h4 class="">Front-end Developer.</h4>           
+      <div class="mt-4">
+        Me apasiona ayudar a mejorar la vida de las personas a través del desarrollo de paginas web, creo en el trabajo en equipo como clave para lograr un trabajo de calidad y el auto-aprendizaje como proceso fundamental para lograr al éxito. <br>
+        Conoceme un poco más
+      </div>
+      <div class="col-12 links">
+        <a href="https://www.linkedin.com/in/cinthyasegura/" target="_blank"><i class="icons fab fa-linkedin-in"></i></a>
+        <a href="mailto:cinthya.segura.tarazona@gmail.com"><i class="icons far fa-envelope"></i></a>
+        <a href="https://github.com/cinthyasegura" target="_blank"><i class="icons fab fa-github"></i></a>
+        <a href="./public/CV-Cinthya-Segura.png" download><i class="far fa-file-alt"></i></a>
+      </div>
     </div>
+  </div>
+</section>  
 
+  <section id="knowledge" class="bg-color pt-5 pb-5">
+    <h2 class="tittle text-center latest">Conocimientos</h2>
+    <hr class="line1 pt-5"> 
+    <section class="container">
+      <span class="ml-5">Herramientas de desarrollo:</span>
+      <span class="ml-5 knowledge-icons">      
+        <i class="fab fa-html5 ml-5"></i><span class="ml-3">Html5</span>
+        <i class="fab fa-react ml-5"></i><span class="ml-3">React</span>
+        <i class="fab fa-css3 ml-5"></i><span class="ml-3">CSS3</span>
+      </span>
+      <span class="ml-5 mt-2">Herramientas de diseño:</span>
+      <span class="ml-5 knowledge-icons">      
+        <i class="fab fa-node-js"></i><span class="ml-3">Node js</span>
+        <i class="fab fa-github"></i><span class="ml-3">GitHub</span>
+        <i class="fab fa-git"></i><span class="ml-3">Git</span>
+      </span>
+      <span class="ml-5 mt-3">Herramientas:</span>
+      <span class="ml-5 knowledge-icons"> 
+        <i class="fab fa-npm"></i><span class="ml-3">Npm</span>
+        <i class="fab fa-js-square"></i><span class="ml-3">Javascript</span>
+        <i class="fab fa-bootstrap"></i><span class="ml-3">Bootstrap</span>
+        <i class="fab fa-figma"></i><span class="ml-3">Figma</span>
+      </span> 
+    </section>
+  </section> 
 
+  <div class="my-4" id="project"></div>
 
-
-    <div class="container padding">
-        <div class="row padding">
-          <div class="col-sm-6">
-            <img src="./public/image/me.jpg" class="img-fluid profile" alt="foto de perfil">
-          </div>
-          <div class="col-sm-6 aboutme">
-            <p>Me apasiona ayudar a mejorar la vida de las personas a través del desarrollo de paginas web, creo en el trabajo en equipo como clave para lograr un trabajo de calidad y el auto-aprendizaje como proceso fundamental para lograr al éxito.</p>
-            
-          </div>
-        </div>
+    <!-- project --> 
+    <h2 class="pt-5 text-center tittle latest">Mis últimos proyectos</h2>
+    <hr class="line">
+    <p class="text-center mb-5">
+      Realizados durante el bootcamp de Laboratoria.
+    </p>
+      
+<section class="container mt">
+  <div class="row mb">
+    <figure class="col-lg-6 col-sm-12 ">
+      <img class="img-fluid project-img" src="./public/image/burger-queen.png" alt="proyecto burger-queen">
+    </figure>
+    <div class="col-lg-6 col-sm-12 ">
+      <h4 class="tittle">Burger queen</h4>
+      <p class="">
+        Plataforma para ser usada por los trabajadores de un restaurante ayuda a disminuir el tiempo de espera de los clientes.
+      </p>
+      <p><span class="bold">Herramientas utilizadas:</span> React hooks, Firebase, Bootstrap.</p>
+      <a href="https://github.com/cinthyasegura/LIM008-fe-burger-queen" target="_blank" class="btn btn-outline-danger">Ver repo</a>
+      <a href="https://cinthyasegura.github.io/LIM008-fe-burger-queen/" target="_blank" class="btn btn-outline-danger ml-3">Ver demo</a>
     </div>
+  </div>
 
-    <div class="container-fluid padding bg-color centir">
-        <div class="row welcome text-center">
-            <div class="col-12">
-                <h2 class="display-6 padding-text">Conocimientos</h2>
-            </div>
-            <hr>
-        </div>
+  <div class="row mb">
+    <figure class="col-lg-6 col-sm-12 ">
+      <img class="img-fluid project-img" src="./public/image/red-social.png" alt="proyecto burger-queen">
+    </figure>
+    <div class="col-lg-6 col-sm-12 ">
+      <h4 class="tittle">Red Social Ayni</h4>
+      <p class="">
+        Es una red social enfocada a emprendedores, donde podrás encontrar diversa información que te ayudará tu emprendimiento.
+      </p>
+      <p><span class="bold">Herramientas utilizadas:</span> Firebase, ES6, Bootstrap, Jest.</p>
+      <a href="https://github.com/dayaGuerra/LIM008-social-network" target="_blank" class="btn btn-outline-danger">Ver repo</a>
+      <a href="https://dayaguerra.github.io/LIM008-social-network/src/#/signin" target="_blank" class="btn btn-outline-danger  ml-3">Ver demo</a>
     </div>
+  </div>
 
-    <div class="container-fluid padding bg-color">
-        <div class="row text-center padding">
-         <div class="col-xs-12 col-sm-6 col-md-6">
-           <i class="fas fa-code"></i>
-           <h3>Front-end Developer</h3>
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus placeat similique, architecto sed iusto esse? Molestias et, accusantium quaerat aliquam voluptatum, eum asperiores veniam praesentium inventore, iusto velit natus quo?</p>
-           <p>¿Qué he utilizado?</p>
-           <p>Javascript(ES6+)</p>
-           <p>React</p>
-           <p>Node js</p>
-           <p>Firebase</p>
-           <p>Html5</p>
-          
-          
-
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-6">
-            <i class="far fa-lightbulb"></i>
-            <h3>Herramientas</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore tenetur illo impedit ducimus aut sint aliquid, magni minima cumque voluptates, minus accusantium debitis eaque ullam sed expedita sunt quibusdam enim?</p>
-            <p>CSS3</p>
-            <p>Bootstrap</p>
-            <p>GitHub</p>
-           <p>Git</p>
-           <p>Metodología Scrum</p>
-           <p>Figma</p>
-        </div>
-       </div>
-       
+  <div class="row mb">
+    <figure class="col-lg-6 col-sm-12 ">
+      <img class="img-fluid project-img" src="./public/image/mdlinks.png" alt="proyecto burger-queen">
+    </figure>
+    <div class="col-lg-6 col-sm-12 ">
+      <h4 class="tittle">Markdown Links</h4>
+      <p class="">
+        Es una librería que analiza archivos markdown y verifica si los links que contiene son válidos o no, además de contabilizar cuantos hay.
+      </p>
+      <p><span class="bold">Herramientas utilizadas:</span> Node js, Babel, Jest, ES6.</p>
+      <a href="https://github.com/cinthyasegura/md-links" target="_blank" class="btn btn-outline-danger">Ver repo</a>
     </div>
-    <div class="my-4" id="project"></div>
+  </div>
 
-
-    <!-- project -->
-
-    <div class="container-fluid padding">
-        <div class="row welcome text-center">
-            <div class="col-12">
-                <h2 class="display-6">Mis proyectos</h2>
-            </div>
-        <hr>
-            <span class="align-center bootcamp">Proyectos realizados durante los seis meses del bootcamp de Laboratoria.</span>
-        </div>
+  <div class="row mb">
+    <figure class="col-lg-6 col-sm-12 ">
+      <img class="img-fluid project-img" src="./public/image/data-lovers.png" alt="proyecto burger-queen">
+    </figure>
+    <div class="col-lg-6 col-sm-12 ">
+      <h4 class="tittle">Data Lovers</h4>
+      <p class="">
+        Página que brindra información del Banco Mundial sobre indicadores sociales desde los años 1960-2017.
+      </p>
+      <p><span class="bold">Herramientas utilizadas:</span> ES6, Fetch.</p>
+      <a href="https://github.com/cinthyasegura/lim-2018-11-bc-core-am-data-lovers" target="_blank" class="btn btn-outline-danger">Ver repo</a>
+      <a href="https://cinthyasegura.github.io/lim-2018-11-bc-core-am-data-lovers/src/" target="_blank" class="btn btn-outline-danger ml-3">Ver demo</a>
     </div>
-    <div class="container-fluid padding">
-        <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <div class="card">
-                    <img class="card-img-top" src="./public/image/burger-queen.PNG" alt="proyecto burger-queen">
-                    <div class="card-body">
-                        <h4 class="card-title">Burger queen</h4>
-                        <p class="card-text">
-                            Plataforma para ser usada por los trabajadores de un restaurante ayuda a disminuir el tiempo de espera de los clientes.
-                        </p>
-                        <p><span class="bold">Herramientas utilizadas:</span> React hooks, Firebase, Bootstrap.</p>
-                        <a href="https://github.com/cinthyasegura/LIM008-fe-burger-queen" target="_blank" class="btn btn-outline-secondary">Ver mas</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="card">
-                        <img class="card-img-top" src="/images/red-social.png" alt="red social">
-                        <div class="card-body">
-                            <h4 class="card-title">Red Social Ayni</h4>
-                            <p class="card-text">
-                                Es una red social enfocada a emprendedores, donde podrás encontrar diversa información que te ayudará tu emprendimiento.
-                            </p>
-                            <p><span class="bold">Herramientas utilizadas:</span>Firebase, Vanilla JS, Bootstrap, Jest.</p>
-                            <a href="https://github.com/dayaGuerra/LIM008-social-network" target="_blank" class="btn btn-outline-secondary">Ver mas</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="card">
-                        <img class="card-img-top" src="https://github.com/cinthyasegura/lim008-fe-silicon-valley/blob/master/src/images/mdlinks.png?raw=true" alt="proyecto md-links">
-                        <div class="card-body">
-                            <h4 class="card-title">Markdown links</h4>
-                            <p class="card-text">
-                                Es una librería que analiza archivos markdown y verifica si los links que contiene son válidos o no, además de contabilizar cuantos hay.
-                            </p>
-                            <p><span class="bold">Herramientas utilizadas:</span> Node js, Babel, Jest.</p>
-                            <a href="https://github.com/cinthyasegura/md-links" target="_blank" class="btn btn-outline-secondary">Ver mas</a>
-                        </div>
-                    </div>
-                </div>
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <div class="card">
-                    <img class="card-img-top" src="/images/cipher.png" alt="cifrado cesar">
-                    <div class="card-body">
-                       <h4 class="card-title">Cifrado cesar</h4>
-                       <p class="card-text">Página que permite encriptar y desencriptar mensajes para una comunicación más segura.</p>
-                       <p><span class="bold">Herramientas utilizadas:</span> Vanilla JS</p>
-                       <a href="https://github.com/cinthyasegura/lim-2018-11-bc-core-am-cipher" target="_blank" class="btn btn-outline-secondary">Ver mas</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <div class="card">
-                    <img class="card-img-top" src="https://github.com/cinthyasegura/lim008-fe-silicon-valley/blob/master/src/images/data-lovers.png?raw=true" alt="proyecto data lovers">
-                    <div class="card-body">
-                        <h4 class="card-title">Data Lovers</h4>
-                        <p class="card-text">
-                            Página que brindra información del Banco Mundial sobre indicadores sociales desde los años 1960-2017.
-                        </p>
-                        <p><span class="bold">Herramientas utilizadas:</span> Vanilla JS, Fetch.</p>
-                        <a href="https://github.com/cinthyasegura/lim-2018-11-bc-core-am-data-lovers" target="_blank" class="btn btn-outline-secondary">Ver mas</a>
-                    </div>
-                </div>
-            </div>           
-        </div>
-        <hr class="my-4">
-    </div>
-    
+  </div>
+</section>           
+ 
 
 <!-- connect -->
-<div class="container-fluid padding" id="contact">
-    <div class="row text-center padding">
-        <div class="col-12">
-            <h2 class="display-8">CONVERSEMOS</h2>
-            <hr class="line">
-            <p>Contactame a través de mis redes sociales. Estaré encantada de poder conversar &#128155;</p>
-        </div>
-       
-    </div>
-</div>
 
-<footer>
-    <div class="container-fluid">
-        <div class="row text-center">
-            <div class="col-12 social padding">
-                <a href="https://www.linkedin.com/in/cinthyasegura/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/cinthyasegura" target="_blank"><i class="fab fa-github-square"></i></a>
-                <a href="mailto:cinthya.segura.tarazona@gmail.com"><i class="fab fa-google"></i></a>
+
+  <footer>
+    <div class="container-fluid text-center mt-5" id="contact">
+      <div class="col-12">
+          <h2 class="latest">CONVERSEMOS</h2>
+          <hr class="line1">
+          <p class="talk">Contactame a través de mis redes sociales. Estaré encantada de poder conversar &#128155;</p>
+      </div>
+    </div>
+    
+            <div class="social">
+              <a href="https://www.linkedin.com/in/cinthyasegura/" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <a href="mailto:cinthya.segura.tarazona@gmail.com"><i class="fas fa-envelope"></i></a>
+              <a href="https://github.com/cinthyasegura" target="_blank"><i class="fab fa-github-square"></i></a>
+              <a href="./public/CV-Cinthya-Segura.png" download><i class="far fa-file-alt"></i></a>
             </div>
-        </div>
-        
-    </div>
-</footer>
+  </footer>
+  <div class="foot pt-3">Creado por Cinthya Segura.</div>
 
-     <script type="module" src="index.js"></script>
-     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
-</body>
+    <script type="module" src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
+  </body>
 </html>
