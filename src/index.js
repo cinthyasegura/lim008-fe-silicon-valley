@@ -12,7 +12,7 @@ function World(width, height) {
     this.y = y || 0;
     this.rad = rad || 25;
     // Velocity
-    this.velX = Math.random() * 2.6 - Math.random() * 2.6;
+    this.velX = Math.random() * 3 - Math.random() * 3;
     this.velY = Math.random() * 2.6 - Math.random() * 2.6;
     this.color = '#' + Math.floor(Math.random() * 16777215).toString(16);
   }
