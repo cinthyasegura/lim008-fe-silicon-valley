@@ -6,7 +6,6 @@ html, body {
     height: 100%;
     width: 100%;
     color: #222;
-    font-size: 1.1rem;
 }
 .logo {
     position: absolute;
@@ -30,6 +29,8 @@ html, body {
     font-size: 2em;
     padding-right: 2rem;
     color: black;
+    animation-name: icons;
+    animation-duration: 6s;
 }
 .links { 
     margin-top: 10%;
@@ -37,6 +38,7 @@ html, body {
 .knowledge-icons i {
     font-size: 3em;
 }
+
 .line {
     width: 20%;
 }
@@ -46,6 +48,8 @@ html, body {
 .project-img {
     width: 80%;
     height: auto;
+    /* animation-name: figure;
+    animation-duration: 8s; */
 }
 .secondary-color {
     color: #F73022;
@@ -76,7 +80,7 @@ canvas {
 .social {
     margin-left: 38%;
 }
- .social a {
+.social a {
     font-size: 3em;
     /* padding-left: 1rem;
     padding-right: 1rem; */
@@ -112,8 +116,7 @@ footer {
         font-size: 1.6em;
         margin-top: 10%;
         margin-left: 27%;
-    }
-    
+    }   
 }
 @media (max-width: 768px) {
     .social {
@@ -135,8 +138,7 @@ footer {
         margin-left: 6%;
         padding-right: 0;
         margin-right: 0;
-    }  
-    
+    }      
 }
 
 
@@ -193,5 +195,23 @@ footer {
     }
     .links a {
         padding-right: 1rem;
+    }
+}
+
+@keyframes icons {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes figure {
+    0% {
+        width: 75%;
+    }
+    100% {
+        width: 80%;
     }
 }
