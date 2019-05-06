@@ -6,7 +6,7 @@ html, body {
     height: 100%;
     width: 100%;
     color: #222;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 .logo {
     position: absolute;
@@ -30,12 +30,11 @@ html, body {
     font-size: 2em;
     padding-right: 2rem;
     color: black;
+    animation-name: icons;
+    animation-duration: 6s;
 }
 .links { 
     margin-top: 10%;
-}
-.knowledge-icons i {
-    font-size: 3em;
 }
 .line {
     width: 20%;
@@ -46,6 +45,12 @@ html, body {
 .project-img {
     width: 80%;
     height: auto;
+}
+.pt {
+    padding-top: 6%;
+}
+.words {
+    font-size: 1.2rem;
 }
 .secondary-color {
     color: #F73022;
@@ -60,26 +65,53 @@ html, body {
 .nav-link {
     font-size: 1.4rem;
 }
-canvas {
+.bubble-canvas {
     position: absolute;
     z-index: -1;
+}
+.container .box {
+    width: 25%;
+    float: left;
+}
+.container .box .pie {
+    position: relative;
+    width: 180px;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.9rem;
+    line-height: 180px;
+}
+.container .box canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .mt {
     margin-top: 8%;
 }
+.mt1 {
+    margin-top: 5%;
+}
 .mb {
     margin-bottom: 8%;
+}
+.ml {
+    margin-left: 18%;
+    font-size: 1rem;
 }
 .bg-color {
     background-color: rgb(244, 247, 248)
 }
+.width {
+    width: 25%;
+    height: 8%;
+}
 .social {
     margin-left: 38%;
 }
- .social a {
+.social a {
     font-size: 3em;
-    /* padding-left: 1rem;
-    padding-right: 1rem; */
 }
 .social a i {
     padding-top: 40px;
@@ -113,7 +145,26 @@ footer {
         margin-top: 10%;
         margin-left: 27%;
     }
-    
+    .width {
+        width: 28%;
+        height: 5%;
+    } 
+    .ml {
+        margin-left: 28%;
+        font-size: 1.1rem;
+    } 
+    .mt1 {
+        margin-top: 12%;
+    }
+    .mb {
+        margin-bottom: 10%;
+    }
+    .pt {
+        padding-top: 16%;
+    }
+    .mt {
+        margin-top: 18%;
+    }
 }
 @media (max-width: 768px) {
     .social {
@@ -135,8 +186,23 @@ footer {
         margin-left: 6%;
         padding-right: 0;
         margin-right: 0;
-    }  
-    
+    } 
+    .ml {
+        margin-left: 20%;
+        font-size: 1rem;
+    } 
+    .mt1 {
+        margin-top: 12%;
+    }   
+    .mb {
+        margin-bottom: 12%;
+    }
+    .pt {
+        padding-top: 14%;
+    }
+    .mt {
+        margin-top: 15%;
+    }
 }
 
 
@@ -156,8 +222,8 @@ footer {
         margin-top: 30%;  
     }
     .mb {
-        margin-top: 25%;
-        margin-bottom: 25%;
+        margin-top: 20%;
+        margin-bottom: 10%;
     }
     .about {
         margin-top: 0;
@@ -180,6 +246,23 @@ footer {
         padding-right: 0;
         font-size: 2.5em;
     }
+    .width {
+        width: 30%;
+        height: 8%;
+    }
+    .pt {
+        padding-top: 30%;
+    }
+    .words {
+        font-size: 1rem;
+    }
+    .ml {
+        margin-left: 30%;
+        font-size: 1rem;
+    }
+    .mt {
+        margin-top: 20%;
+    }
 }
 @media (max-width: 325px) {
     .social {
@@ -193,5 +276,26 @@ footer {
     }
     .links a {
         padding-right: 1rem;
+    }
+    .ml {
+        margin-left: 24%;
+    }
+}
+
+@keyframes icons {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes figure {
+    0% {
+        width: 75%;
+    }
+    100% {
+        width: 80%;
     }
 }
