@@ -4,6 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="public/image/CS.png" type="image/x-icon">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <title>Portafolio | Cinthya Segura</title>
   <style>
@@ -13,7 +14,7 @@
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-md navbar-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand"  href="#/home">
           <img class="logo" src="./public/image/CS.png" alt="logo">
@@ -32,7 +33,7 @@
     </nav>
   </header>
    
-  <canvas id="canvas"></canvas>
+  <canvas id="canvas" class="bubble-canvas"></canvas>
 
   
   <section class="container">  
@@ -45,7 +46,7 @@
         <h4 class="">Front-end Developer.</h4>           
       <div class="mt-4">
         Me apasiona ayudar a mejorar la vida de las personas a través del desarrollo de paginas web, creo en el trabajo en equipo como clave para lograr un trabajo de calidad y el auto-aprendizaje como proceso fundamental para lograr al éxito. <br>
-        Conoceme un poco más
+        Me puedes contactar a través
       </div>
       <div class="col-12 links">
         <a href="https://www.linkedin.com/in/cinthyasegura/" target="_blank"><i class="icons fab fa-linkedin-in"></i></a>
@@ -57,41 +58,91 @@
   </div>
 </section>  
 
-  <section id="knowledge" class="bg-color pt-5 pb-5">
+  <section id="knowledge" class="bg-color pt">
     <h2 class="tittle text-center latest">Conocimientos</h2>
-    <hr class="line1 pt-5"> 
-    <section class="container">
-      <div class="col-12">
-        <span class="ml-5">Herramientas de desarrollo:</span>
-        <span class="ml-5 knowledge-icons">
-            <i class="fab fa-js-square"></i><span class="ml-3">Javascript</span>     
-          <i class="fab fa-html5 ml-5"></i><span class="ml-3">Html5</span>
-          <i class="fab fa-react ml-5"></i><span class="ml-3">React</span>
-          <i class="fab fa-node-js"></i><span class="ml-3">Node js</span
-        </span>
-      </div>
-      <div class="col-12">
-        <span class="ml-5 mt-2">Herramientas de diseño:</span>
-        <span class="ml-5 knowledge-icons">      
-          <i class="fab fa-css3 ml-5"></i><span class="ml-3">CSS3</span>
-          <i class="fab fa-bootstrap"></i><span class="ml-3">Bootstrap</span>
-          <i class="fab fa-figma"></i><span class="ml-3">Figma</span>
-        </span>
-      </div>
-      <div class="col-12">
-        <span class="ml-5 mt-3">Herramientas:</span>
-        <span class="ml-5 knowledge-icons"> 
-          <i class="fab fa-github"></i><span class="ml-3">GitHub</span>
-          <i class="fab fa-git"></i><span class="ml-3">Git</span>  
-        </span> 
+    <hr class="line1"> 
+    <section class="container text-center mt1">
+      <div class="row">
+        <div class="col-lg-3 col-6 mb">
+
+          <img src="public/image/JS.svg" class="width mb-4" alt="Javascript" /><br/>
+          <span class="words" >Javascript</span>
+        </div>
+        <div class="col-lg-3 col-6 mb">
+          <img src="./public/image/firebase.png" class="width mb-4" alt="firebase" /><br/>
+          <span class="words">Firebase</span> 
+        </div>
+        <div class="col-lg-3 col-6 mb">
+          <img src="./public/image/html.png" class="width mb-4" alt="html" /><br/>
+          <span class="words">Html5</span>
+        </div>
+        <div class="col-lg-3 col-6 mb">
+          <img src="./public/image/react.png" class="width mb-4" alt="react" /><br/>
+          <span class="words">React</span>
+        </div>
+        <div class="col-lg-3 col-6 mb">
+          <img src="./public/image/node.png" class="width mb-4" alt="nodejs"/><br/>
+          <span class="words">Node js</span>
+        </div>
+        <div class="col-lg-3 col-6 mb">
+          <img src="./public/image/jest.png" class="width mb-4" alt="jest"/><br/>
+          <span class="words">Jest</span>
+        </div>
+        <div class="col-lg-3 col-6 mb">
+          <img src="./public/image/babel.png" class="width mb-4" alt="babel"/><br/>
+          <span class="words">Babel</span>
+        </div>
+        <div class="col-lg-3 col-6 mb">     
+          <img src="./public/image/css.png" class="width mb-4" alt="CSS3"/><br/>
+          <span class="words">CSS3</span>
+        </div>
+        <div class="col-lg-3 col-6 mb">
+          <img src="./public/image/bootstrap.png" class="width mb-4" alt="bootstrap"/><br/>
+          <span class="words">Bootstrap</span>
+        </div>
+        <div class="col-lg-3 col-6 mb">
+          <img src="./public/image/figma.svg" class="width mb-4" alt="figma"/><br/>
+          <span class="words">Figma</span>
+        </div>
+        <div class="col-lg-3 col-6 mb">
+          <img src="./public/image/github.svg" class="width mb-4" alt="github"/><br/>
+          <span class="words">GitHub</span>
+        </div>
+        <div class="col-lg-3 col-6 mb">
+          <img src="./public/image/git.png" class="width mb-4" alt="git"/><br/>
+          <span class="words">Git</span>  
+        </div>
       </div>
     </section>
+    <h2 class="tittle text-center latest mt">Habilidades</h2>
+    <hr class="line1"> 
+    <div class="container mt-5">
+      <div class="row mt1">
+        <div class="box col-xl-3 col-lg-6 col-md-6 col-12 mb">
+          <div class="chart pie" data-percent="88" >88%</div>
+          <span class="ml fs">Trabajo en equipo</span>
+        </div>
+        <div class="box col-xl-3 col-lg-6 col-md-6 col-12 mb">
+          <div class="chart1 pie" data-percent="90" >90%</div>
+          <span class="ml fs">Metodología Agile</span>
+        </div>
+        <div class="box col-xl-3 col-lg-6 col-md-6 col-12 mb">
+            <div class="chart2 pie" data-percent="92" >92%</div>
+            <span class="ml fs">Growth mindset</span>
+        </div>
+        <div class="box col-xl-3 col-lg-6 col-md-6 col-12 mb">
+          <div class="chart3 pie" data-percent="87" >87%</div>
+          <span class="ml fs">Autoaprendizaje</span>
+        </div>
+      </div> 
+    </div>
   </section> 
-
+  
+  
   <div class="my-4" id="project"></div>
 
     <!-- project --> 
-    <h2 class="pt-5 text-center tittle latest">Mis últimos proyectos</h2>
+    <h2 class="pt-5 mt text-center tittle latest">Mis últimos proyectos</h2>
     <hr class="line">
     <p class="text-center mb-5">
       Realizados durante el bootcamp de Laboratoria.
@@ -162,7 +213,7 @@
 <!-- connect -->
 
 
-  <footer>
+  <footer class="mt">
     <div class="container-fluid text-center mt-5" id="contact">
       <div class="col-12">
           <h2 class="latest">CONVERSEMOS</h2>
@@ -180,7 +231,12 @@
   </footer>
   <div class="foot pt-3">Creado por Cinthya Segura.</div>
 
-    <script type="module" src="index.js"></script>
+    <script type="module" src="index.js"></script>  
+    <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> -->
+    <script src="renderer/canvas.js"></script>
+    <script src="easypiechart.js"></script> 
+    <script  src="easy-pie-chart.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    

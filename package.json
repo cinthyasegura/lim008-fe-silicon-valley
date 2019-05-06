@@ -10,5 +10,8 @@
     "portafolio"
   ],
   "author": "cinthya segura",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "bower": "^1.8.8"
+  }
 }
