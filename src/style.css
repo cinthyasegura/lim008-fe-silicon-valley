@@ -93,7 +93,7 @@ html, body {
 .mt1 {
     margin-top: 5%;
 }
-.mb {
+.mb, .mb1 {
     margin-bottom: 8%;
 }
 .ml {
@@ -223,6 +223,9 @@ footer {
     .mb {
         margin-top: 20%;
         margin-bottom: 10%;
+    }
+    .mb1 {
+        margin-bottom: 4%;  
     }
     .about {
         margin-top: 0;
