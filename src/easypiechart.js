@@ -1,4 +1,4 @@
-let EasyPieChart = function(el, opts) {
+const EasyPieChart = function(el, opts) {
   let defaultOptions = {
     barColor: '#969393',
     trackColor: '#f9f9f9',
@@ -13,20 +13,20 @@ let EasyPieChart = function(el, opts) {
       duration: 2000,
       enabled: true
     },
-    easing: function(x, t, b, c, d) { // more can be found here: http://gsgd.co.uk/sandbox/jquery/easing/
+    easing: (x, t, b, c, d) => { // more can be found here: http://gsgd.co.uk/sandbox/jquery/easing/
       t = t / (d / 2);
       if (t < 1) {
         return c / 2 * t * t + b;
       }
       return -c / 2 * ((--t) * (t - 2) - 1) + b;
     },
-    onStart: function(from, to) {
+    onStart: (from, to) => {
       return;
     },
-    onStep: function(from, to, currentValue) {
+    onStep: (from, to, currentValue) => {
       return;
     },
-    onStop: function(from, to) {
+    onStop: (from, to) => {
       return;
     }
   };
@@ -46,7 +46,7 @@ let EasyPieChart = function(el, opts) {
   /**
 	 * Initialize the plugin by creating the options object and initialize rendering
 	 */
-  let init = function() {
+  const init = function() {
     this.el = el;
     this.options = options;
 
@@ -132,3 +132,11 @@ let EasyPieChart = function(el, opts) {
 
   init();
 };
+
+const element = document.querySelectorAll('.chart');
+
+setTimeout(() => {
+  element.forEach(item =>
+    new EasyPieChart(item)
+  );
+}, 3000);
