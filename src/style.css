@@ -16,7 +16,7 @@ html, body {
 }
 .profile {
     border-radius: 50%;
-    width: 80%;
+    width: 65%;
     height: auto;
     -webkit-filter: grayscale(100%);filter: grayscale(100%);
 }
@@ -274,6 +274,12 @@ footer {
 @media (min-width: 411px) and (max-width: 416px) {
     .social {
         margin-left: 14%;
+    }
+}
+@media (min-width: 370px) and (max-width: 376px) {
+    .width {
+        height: 6%;
+        width: 25%;
     }
 }
 
