@@ -15,6 +15,7 @@ html, body {
     height: 50px;
 }
 .profile {
+    border-radius: 50%;
     width: 80%;
     height: auto;
     -webkit-filter: grayscale(100%);filter: grayscale(100%);
@@ -93,11 +94,11 @@ html, body {
 .mt1 {
     margin-top: 5%;
 }
-.mb {
+.mb, .mb1 {
     margin-bottom: 8%;
 }
 .ml {
-    margin-left: 18%;
+    margin-left: 21%;
     font-size: 1rem;
 }
 .bg-color {
@@ -224,6 +225,9 @@ footer {
         margin-top: 20%;
         margin-bottom: 10%;
     }
+    .mb1 {
+        margin-bottom: 4%;  
+    }
     .about {
         margin-top: 0;
     }
@@ -246,8 +250,8 @@ footer {
         font-size: 2.5em;
     }
     .width {
-        width: 30%;
-        height: 30%;
+        height: 6%;
+        width: auto;
     }
     .pt {
         padding-top: 30%;
@@ -261,6 +265,10 @@ footer {
     }
     .mt {
         margin-top: 20%;
+    }
+    .project-img {
+        width: 100%;
+        height: auto;
     }
 }
 @media (min-width: 411px) and (max-width: 416px) {
